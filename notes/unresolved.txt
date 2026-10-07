@@ -1,0 +1,101 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+IOBB | ttunes.so
+TT_IPAddr | ttunes.so
+ifdn_megalink() | ttunes.so
+ifup_megalink() | ttunes.so
+StartTouchTunes() | ttunes.so
+TT_Set_Exp_Date(unsigned char) | ttunes.so
+Display_TT_Error(char*, int) | ttunes.so
+TT_GetSystemMode() | ttunes.so
+NVWrite(char*, int) | ttunes.so
+TT_Ping(bool) | ttunes.so
+QueFlush(bool) | ttunes.so
+ScreenInfo::GetInstance() | ttunes.so
+ScreenInfo::SwitchVideoMode(xml_screencontrol::Resolution, xml_screencontrol::Engine, xml_screencontrol::FullScreenMode, xml_screencontrol::WindowStackPosition, xml_screencontrol::DisplayColorDepth) | ttunes.so
+WorldClass::SpriteDrawTarget(Bitmap*) | ttunes.so
+WorldClass::LoadBmp(char const*, int, float, int, int, bool, bool, Bitmap*) | ttunes.so
+WorldClass::SetBack(Bitmap*, int) | ttunes.so
+WorldClass::ShowAll() | ttunes.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | ttunes.so
+WorldClass::WorldClass() | ttunes.so
+SettingsTable::Instance() | ttunes.so
+CTTunesGraphics::Init() | ttunes.so
+CTTunesGraphics::CTTunesGraphics() | ttunes.so
+CTTunesGraphics::~CTTunesGraphics() | ttunes.so
+CreditsManagerI::AvailableCredits() | ttunes.so
+CreditsManagerI::Refund(unsigned int, float) | ttunes.so
+CTTunesNetInterface::TopAlbumId(unsigned long) | ttunes.so
+CTTunesNetInterface::XServeAble() | ttunes.so
+CTTunesNetInterface::Get_Pay_Amnt(int) | ttunes.so
+CTTunesNetInterface::TopAlbumSort() | ttunes.so
+CTTunesNetInterface::Get_Pay_Songs(int) | ttunes.so
+CTTunesNetInterface::Process_Hello() | ttunes.so
+CTTunesNetInterface::TopAlbumFlags(unsigned long) | ttunes.so
+CTTunesNetInterface::Request_FileRX(char*, char*) | ttunes.so
+CTTunesNetInterface::Request_Prices() | ttunes.so
+CTTunesNetInterface::SendMoneyEntry(int) | ttunes.so
+CTTunesNetInterface::TopAlbumArtist(unsigned long) | ttunes.so
+CTTunesNetInterface::Process_Goodbye() | ttunes.so
+CTTunesNetInterface::Send_Play_Request(unsigned long&, unsigned long*) | ttunes.so
+CTTunesNetInterface::Request_Album_Songs(unsigned long, unsigned long&) | ttunes.so
+CTTunesNetInterface::Request_PlayNowCost() | ttunes.so
+CTTunesNetInterface::Request_TopTenSongs() | ttunes.so
+CTTunesNetInterface::Request_PlayNowCount() | ttunes.so
+CTTunesNetInterface::Send_PlayNow_Request(unsigned long&, unsigned long*) | ttunes.so
+CTTunesNetInterface::JukeBox_XServe_Request(int*) | ttunes.so
+CTTunesNetInterface::Poll(unsigned long, char*, unsigned long) | ttunes.so
+CTTunesNetInterface::InitV3() | ttunes.so
+CTTunesNetInterface::UpdateV3() | ttunes.so
+CTTunesNetInterface::Reconnect() | ttunes.so
+List::Push(Group*) | ttunes.so
+Books::ContinueGame(xml_gameinfo::GameIds, int, int) | ttunes.so
+Books::Instance() | ttunes.so
+Group::Signal(Group::SpriteSignalType) | ttunes.so
+Group::Signal(SpriteSignal*) | ttunes.so
+Group::Message(Group::SpriteSignalType) | ttunes.so
+Group::Message(SpriteSignal*) | ttunes.so
+USBIO::EnableWatchdog() | ttunes.so
+USBIO::DisableWatchdog() | ttunes.so
+USBIO::WatchdogEnabled() | ttunes.so
+Bitmap::CData(int) | ttunes.so
+Bitmap::GreyBmp() | ttunes.so
+Bitmap::Compress(bool, int, unsigned short*) | ttunes.so
+EventO::GetType() | ttunes.so
+EventO::EventO() | ttunes.so
+EventO::~EventO() | ttunes.so
+Sprite::DoNextFrame() | ttunes.so
+Sprite::SpriteClick() | ttunes.so
+Sprite::AssignString(String*, unsigned long) | ttunes.so
+Sprite::Reset() | ttunes.so
+Sprite::DoDraw() | ttunes.so
+Sprite::Enable(unsigned long) | ttunes.so
+Sprite::SetBmp(Bitmap*, unsigned long) | ttunes.so
+Sprite::Signal(Group::SpriteSignalType) | ttunes.so
+Sprite::Signal(SpriteSignal*) | ttunes.so
+Sprite::Disable(unsigned long, bool) | ttunes.so
+Sprite::Message(Group::SpriteSignalType) | ttunes.so
+Sprite::Message(SpriteSignal*) | ttunes.so
+Sprite::SetCord(float, float, float, unsigned long) | ttunes.so
+Sprite::SetSize(int, int) | ttunes.so
+Sprite::DoCommand(int) | ttunes.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | ttunes.so
+Sprite::Sprite(Bitmap*, unsigned long, Sprite*) | ttunes.so
+Sprite::~Sprite() | ttunes.so
+String::String(char const*, int, char const*, int, signed char, int, int, int, unsigned char, unsigned char, unsigned short) | ttunes.so
+NVRAMMap::SetGameOption(xml_gameoptions::GameOptionIndex, unsigned char) | ttunes.so
+TextUtils::ConvertToMarkup(char const*) | ttunes.so
+db_config::GameInfo_record::GameInfo_record(db_config::GameInfo_record const&) | ttunes.so
+db_config::GameInfo_record::GameInfo_record() | ttunes.so
+db_config::GameInfo_record::~GameInfo_record() | ttunes.so
+typeinfo for EventO | ttunes.so
+typeinfo for Sprite | ttunes.so
+vtable for DOSLinuxWorld | ttunes.so
+blit | ttunes.so
+c_TT_Jackets_Dir | ttunes.so
+key | ttunes.so
+s_TTunesBitmaps | ttunes.so
+s_TTunesIface | ttunes.so
+screen | ttunes.so
